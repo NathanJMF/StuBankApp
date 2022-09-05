@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "299317079624",
+    "project_id": "csc2033-team-19-stubank",
+    "storage_bucket": "csc2033-team-19-stubank.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299317079624:android:c0baf23b23c86513c9327d",
+        "android_client_info": {
+          "package_name": "com.example.csc2033_team19_stubank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "299317079624-s4f7apd323llgf5k0fevhnm7ustab5fc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEGA_uk5kNrAY2XLx1Eqtlerw0MWkSCr8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "299317079624-s4f7apd323llgf5k0fevhnm7ustab5fc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

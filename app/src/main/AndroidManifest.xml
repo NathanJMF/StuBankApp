@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.csc2033_team19_stubank">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Statement"></activity>
+        <activity
+            android:name=".ResetPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangePassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AccountPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Transfer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ViewTransactions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditTransaction"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignIn"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TwoFA"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EmailVerification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CardDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pots"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Budget"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SetBudget"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewPot"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SavingPot"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddToPot"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MovePotMoney"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PredictFutureSpending"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CheckPassword"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".EditGoal"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".CheckDelete"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CustomTheme" />
+    </application>
+
+</manifest>

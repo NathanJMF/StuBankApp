@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">StuBank</string>
+    <string name="Signin_button">Sign in</string>
+    <string name="Signup_button">Sign up</string>
+    <string name="StuBank_Title">StuBank</string>
+    <string name="HomeStuBank">StuBank</string>
+    <string name="Balance">Balance:</string>
+    <string name="Balance_with_pots">Balance including pots:</string>
+    <string name="Budget_placeholder">Budget left...</string>
+    <string name="Recent_transactions">Recent Transactions</string>
+    <string name="Account_details_page">Account Details</string>
+    <string name="Sort_code">Sort code:</string>
+    <string name="Account_number">Account number:</string>
+    <string name="Security_number">Security number:</string>
+    <string name="Generate_new_card_details">Get new card details</string>
+    <string name="Account_title">Account</string>
+    <string name="Overdraft">Overdraft:</string>
+    <string name="Available_overdraft">Remaining Overdraft: £</string>
+    <string name="Interest">1.0% AER</string>
+    <string name="pay_overdraft">Pay Overdraft</string>
+    <string name="amount_to_pay">Amount to Pay:</string>
+    <string name="set_budget">Set budgets</string>
+    <string name="predict_spendings">Predict future spending</string>
+    <string name="freeze">Freeze/Unfreeze Card</string>
+    <string name="Transfer">Transfer</string>
+    <string name="Budget">Budget</string>
+    <string name="Statements">Statements</string>
+    <string name="Transport">Transport</string>
+    <string name="Groceries">Groceries</string>
+    <string name="Eating_out">Eating out</string>
+    <string name="Entertainment">Entertainment</string>
+    <string name="Bills">Bills</string>
+    <string name="Uni">Uni</string>
+    <string name="Shopping">Shopping</string>
+    <string name="General">General</string>
+    <string name="Total_budget">Total budget</string>
+    <string name="Budget_for_days">Budget for how many days</string>
+    <string name="money">£0.00</string>
+    <string name="days">days</string>
+    <string name="Setting">Settings</string>
+    <string name="change_password">Change password</string>
+    <string name="Log_out">Log out</string>
+    <string name="Transaction_rounded">Transactions rounded to the nearest pound and difference placed in saving pot</string>
+    <string name="Dark_mode">Dark Mode</string>
+    <string name="Pots_title">Pots</string>
+    <string name="New_pot">New pot</string>
+    <string name="Saving">Saving</string>
+    <string name="Name">Name</string>
+    <string name="Password">Password</string>
+    <string name="Enter_password">Enter password</string>
+    <string name="Add_password">Enter Password:</string>
+    <string name="Forgotten_password"><u>Forgotten Password?</u></string>
+    <string name="Reset_passsword">Reset Password</string>
+    <string name="Account_email">Enter your account email address:</string>
+    <string name="Reset_password_2FA">Enter your account verification code from Google Authenticator:</string>
+    <string name="TwoFA_instructions">Install the Google Authenticator app.
+    In the app, scan the QR code or enter the key displayed below:</string>
+    <string name="Submit">Submit</string>
+    <string name="Change_password">Change Password</string>
+    <string name="Old_password">Enter Old Password:</string>
+    <string name="New_password">Enter New Password:</string>
+    <string name="Reenter_new_password">Re-Enter New Password:</string>
+    <string name="Amount">Amount</string>
+    <string name="Create_new_pot">Create new pot</string>
+    <string name="Reference">Reference</string>
+    <string name="make_transaction">Make a transaction</string>
+    <string name="take_from_pot">Take from pot</string>
+    <string name="name_of_pot_or_account">Name of pot or account to send to:</string>
+    <string name="From">From</string>
+    <string name="Name_of_pot_taking_from">Name of pot taking from</string>
+    <string name="name_of_pot">Name of pot</string>
+    <string name="move_money_into_pot">Move money</string>
+    <string name="price_budget_placeholder">£0/£0</string>
+    <string name="count_down_days_placeholder">0 days left</string>
+    <string name="Days">days</string>
+    <string name="firstname">First name</string>
+    <string name="surname">Surname</string>
+    <string name="repeat_password">Repeat password</string>
+    <string name="money_transfer">Transfer Money</string>
+    <string name="transfer_button">Make Transfer</string>
+    <string name="transfer_amount">Transfer Amount:</string>
+    <string name="payee_sortcode">Payee Sort Code:</string>
+    <string name="payee_accno">Payee Account Number:</string>
+    <string name="category">Category:</string>
+    <string-array name="categories">
+        <item>Other</item>
+        <item>Bills</item>
+        <item>Eating Out</item>
+        <item>Entertainment</item>
+        <item>Groceries</item>
+        <item>Shopping</item>
+        <item>Transport</item>
+        <item>University</item>
+    </string-array>
+    <string-array name="includeBudget">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="logo">Logo</string>
+    <string name="last_name">Last Name</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="email">Email</string>
+    <string name="authentication_code">Authentication Code</string>
+    <string name="qrimage">QRImage</string>
+    <string name="confirm">Confirm</string>
+    <string name="enter_the_authentication_code">Enter the authentication code</string>
+    <string name="copytoclipboard">CopyToClipboard</string>
+    <string name="back_button">Back button</string>
+    <string name="Statement_select_date">Select the date of the statement</string>
+</resources>

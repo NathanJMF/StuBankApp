@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Transfer">
+
+    <ImageButton
+        android:id="@+id/budgetButtonBudgetPage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/rounded_corners_buttons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pie_chart" />
+
+    <ImageButton
+        android:id="@+id/potsButtonBudgetPage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/rounded_corners_buttons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pots_icon" />
+
+    <ImageButton
+        android:id="@+id/homeButtonBudgetPage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/rounded_corners_buttons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_icon" />
+
+    <ImageButton
+        android:id="@+id/accountButtonBudgetPage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/rounded_corners_buttons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/details_account_icon" />
+
+    <ImageButton
+        android:id="@+id/transferButtonBudgetPage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/rounded_corners_buttons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/transfer" />
+
+    <TextView
+        android:id="@+id/budgetTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Budget"
+        android:textColor="@color/green"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/budgetDate"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:gravity="center_horizontal"
+        android:text="Month, Year"
+        android:textColor="@color/green"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <TextView
+        android:id="@+id/budgetDaysRemaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Days Left: "
+        android:textColor="@color/green"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/budgetButtonBudgetPage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/budgetDaysRemaining">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.razerdp.widget.animatedpieview.AnimatedPieView
+                android:id="@+id/budgetPieChart"
+                android:layout_width="325dp"
+                android:layout_height="325dp"
+                android:layout_marginTop="56dp"
+                android:layout_marginEnd="36dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/budgetSubtitle"
+                android:layout_width="345dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="27dp"
+                android:gravity="center_horizontal"
+                android:text="Category Breakdown:"
+                android:textColor="@color/green"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/budgetTotalText"
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="12dp"
+                android:text="Total • £ / £"
+                android:textColor="@color/green"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/budgetPieChart" />
+
+            <ProgressBar
+                android:id="@+id/budgetTotalBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="350dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="25dp"
+                android:textColor="@color/green"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/budgetTotalText" />
+
+            <TextView
+                android:id="@+id/budgetGroceriesText"
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="12dp"
+                android:text="Groceries • £ / £"
+                android:textColor="@color/groceries"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/budgetTotalBar" />
+
+            <ProgressBar
+                android:id="@+id/budgetGroceriesBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="350dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="25dp"
+                android:progressTint="@color/groceries"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/budgetGroceriesText" />
+
+            <TextView
+                android:id="@+id/budgetShoppingText"
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="12dp"
+                android:text="Shopping • £ / £"
+                android:textColor="@color/shopping"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/budgetGroceriesBar" />
+
+            <ProgressBar
+                android:id="@+id/budgetShoppingBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="350dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="25dp"
+                android:progressTint="@color/shopping"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/budgetShoppingText" />
+
+            <TextView
+                android:id="@+id/budgetBillsText"
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="12dp"
+                android:text="Bills • £ / £"
+                android:textColor="@color/bills"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/budgetShoppingBar" />
+
+            <ProgressBar
+                android:id="@+id/budgetBillsBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="350dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="25dp"
+                android:progressTint="@color/bills"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/budgetBillsText" />
+
+            <TextView
+                android:id="@+id/budgetEntertainmentText"
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="12dp"
+                android:text="Entertainment • £ / £"
+                android:textColor="@color/entertainment"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/budgetBillsBar" />
+
+            <ProgressBar
+                android:id="@+id/budgetEntertainmentBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="350dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="25dp"
+                android:progressTint="@color/entertainment"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/budgetEntertainmentText" />
+
+            <TextView
+                android:id="@+id/budgetEatingOutText"
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="12dp"
+                android:text="Eating Out • £ / £"
+                android:textColor="@color/eatingOut"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/budgetEntertainmentBar" />
+
+            <ProgressBar
+                android:id="@+id/budgetEatingOutBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="350dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="25dp"
+                android:progressTint="@color/eatingOut"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/budgetEatingOutText" />
+
+            <TextView
+                android:id="@+id/budgetUniversityText"
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="12dp"
+                android:text="University • £ / £"
+                android:textColor="@color/university"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/budgetEatingOutBar" />
+
+            <ProgressBar
+                android:id="@+id/budgetUniversityBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="350dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="25dp"
+                android:progressTint="@color/university"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/budgetUniversityText" />
+
+            <TextView
+                android:id="@+id/budgetTransportText"
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="12dp"
+                android:text="Transport • £ / £"
+                android:textColor="@color/transport"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/budgetUniversityBar" />
+
+            <ProgressBar
+                android:id="@+id/budgetTransportBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="350dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="25dp"
+                android:progressTint="@color/transport"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/budgetTransportText" />
+
+            <TextView
+                android:id="@+id/budgetOtherText"
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="12dp"
+                android:text="Other • £ / £"
+                android:textColor="@color/other"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/budgetTransportBar" />
+
+            <ProgressBar
+                android:id="@+id/budgetOtherBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="350dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="25dp"
+                android:progressTint="@color/other"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/budgetOtherText" />
+
+            <Button
+                android:id="@+id/setBudgets"
+                android:layout_width="310dp"
+                android:layout_height="59dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rounded_corners_buttons"
+                android:text="Set Budgets"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/budgetOtherBar" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
